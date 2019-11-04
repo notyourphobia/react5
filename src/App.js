@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import QuoteDisplayer from './Wisdom'
+import Doer from './Doer'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      character: 'LulName',
+      image: 'https://picsum.photos/300/300',
+      quote: 'LulQuote'
+    }
+  }
+
+  getNewPerson() {
+    fetch("https://thesimpsonsquoteapi.glitch.me/quotes")
+      .then(response => response.json())
+      .then(data => {
+        this.setState({
+          character: data[0].character,
+          image: data[0].image,
+          quote: data[0].quote
+        })
+      })
+  }
+
+  render() {
+    return (
+      <div className='App'>
+
+
+        <QuoteDisplayer image={this.state.image} name={this.state.character} quote={this.state.quote} />
+        <br/>
+        <Doer doPls={() => this.getNewPerson()} />
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
