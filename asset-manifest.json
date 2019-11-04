@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/notyourphobia/react5/static/css/main.34de6062.chunk.css",
+    "main.js": "/notyourphobia/react5/static/js/main.0400eeb2.chunk.js",
+    "main.js.map": "/notyourphobia/react5/static/js/main.0400eeb2.chunk.js.map",
+    "runtime-main.js": "/notyourphobia/react5/static/js/runtime-main.a91ab166.js",
+    "runtime-main.js.map": "/notyourphobia/react5/static/js/runtime-main.a91ab166.js.map",
+    "static/js/2.f128c06c.chunk.js": "/notyourphobia/react5/static/js/2.f128c06c.chunk.js",
+    "static/js/2.f128c06c.chunk.js.map": "/notyourphobia/react5/static/js/2.f128c06c.chunk.js.map",
+    "index.html": "/notyourphobia/react5/index.html",
+    "precache-manifest.8dd5f00ea03aa2c5629d5690a8dc24fc.js": "/notyourphobia/react5/precache-manifest.8dd5f00ea03aa2c5629d5690a8dc24fc.js",
+    "service-worker.js": "/notyourphobia/react5/service-worker.js",
+    "static/css/main.34de6062.chunk.css.map": "/notyourphobia/react5/static/css/main.34de6062.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a91ab166.js",
+    "static/js/2.f128c06c.chunk.js",
+    "static/css/main.34de6062.chunk.css",
+    "static/js/main.0400eeb2.chunk.js"
+  ]
+}
